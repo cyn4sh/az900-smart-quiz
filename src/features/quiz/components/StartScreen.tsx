@@ -9,9 +9,10 @@ import {
 
 interface StartScreenProps {
   onStart: () => void;
+  onShowHistory: () => void;
 }
 
-export function StartScreen({ onStart }: StartScreenProps) {
+export function StartScreen({ onStart, onShowHistory }: StartScreenProps) {
   return (
     <Card className="rounded-[12px] border border-border bg-surface p-2 ring-0">
       <CardHeader className="gap-3">
@@ -26,13 +27,21 @@ export function StartScreen({ onStart }: StartScreenProps) {
           answer you will see why it is right or wrong.
         </CardDescription>
       </CardHeader>
-      <CardContent className="pt-2">
+      <CardContent className="flex flex-col gap-3 pt-2">
         <Button
           type="button"
           className="h-12 w-full rounded-[8px] text-base"
           onClick={onStart}
         >
           Start quiz
+        </Button>
+        <Button
+          type="button"
+          variant="ghost"
+          className="h-12 w-full rounded-[8px] text-base"
+          onClick={onShowHistory}
+        >
+          History
         </Button>
       </CardContent>
     </Card>
