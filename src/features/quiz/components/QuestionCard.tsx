@@ -59,7 +59,7 @@ export function QuestionCard({
   return (
     <Card className="rounded-[12px] border border-border bg-surface ring-0">
       <CardHeader>
-        <CardTitle className="font-heading text-lg leading-snug font-semibold">
+        <CardTitle role="heading" aria-level={1} className="font-heading text-lg leading-snug font-semibold">
           {question.prompt}
         </CardTitle>
       </CardHeader>

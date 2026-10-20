@@ -44,7 +44,7 @@ export function ResultsScreen({
     <div className="flex flex-col gap-4">
       <Card className="rounded-[12px] border border-border bg-surface ring-0">
         <CardHeader>
-          <CardTitle className="font-heading text-2xl font-semibold">
+          <CardTitle role="heading" aria-level={1} className="font-heading text-2xl font-semibold">
             Results
           </CardTitle>
           <CardDescription className="text-base">
@@ -93,7 +93,7 @@ export function ResultsScreen({
 
       <Card className="rounded-[12px] border border-border bg-surface ring-0">
         <CardHeader>
-          <CardTitle className="font-heading text-lg font-semibold">
+          <CardTitle role="heading" aria-level={2} className="font-heading text-lg font-semibold">
             Review missed questions
           </CardTitle>
           <CardDescription>

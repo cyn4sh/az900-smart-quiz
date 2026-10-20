@@ -28,7 +28,7 @@ export function HistoryScreen({ onBack, onStartQuiz }: HistoryScreenProps) {
     <div className="flex flex-col gap-4">
       <Card className="rounded-[12px] border border-border bg-surface ring-0">
         <CardHeader>
-          <CardTitle className="font-heading text-2xl font-semibold">
+          <CardTitle role="heading" aria-level={1} className="font-heading text-2xl font-semibold">
             History
           </CardTitle>
           <CardDescription className="text-base">

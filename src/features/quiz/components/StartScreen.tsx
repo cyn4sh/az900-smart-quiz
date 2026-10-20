@@ -19,7 +19,7 @@ export function StartScreen({ onStart, onShowHistory }: StartScreenProps) {
         <p className="text-xs font-medium tracking-wide text-primary uppercase">
           Unofficial
         </p>
-        <CardTitle className="font-heading text-2xl font-semibold">
+        <CardTitle role="heading" aria-level={1}className="font-heading text-2xl font-semibold">
           AZ-900 Smart Quiz
         </CardTitle>
         <CardDescription className="text-base leading-relaxed">
